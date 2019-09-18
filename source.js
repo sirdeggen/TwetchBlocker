@@ -1,6 +1,6 @@
 // Twetch blocker
-var blockList = ['Someone', 'Someone Else']
 setInterval(() => {
+  var blockList = (localStorage.blockList || [])
   var allTwetches = document.querySelectorAll('.MuiGrid-item')
   allTwetches.forEach((twetch) => {
     try {
