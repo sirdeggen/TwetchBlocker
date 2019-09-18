@@ -19,3 +19,11 @@ setInterval(() => {
     }
   })
 }, 1000)
+
+var blockList = JSON.parse(localStorage.blockList || '[]')
+try {
+  blockList.push(document.querySelector('.MuiGrid-item').children[0].children[2].children[0].innerText)
+  localStorage.setItem('blockList', JSON.stringify(blockList))
+} catch (er) {
+  console.log(er)
+}
