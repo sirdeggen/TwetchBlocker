@@ -8,5 +8,4 @@ try{if(blockList.includes(twetch.children[0].children[1].children[0].children[0]
 
 Change the blocklist to suit, or use the bookmark below whilst on the user page for the person you want to block:
 
-`var blockList=JSON.parse(localStorage.blockList||'[]')
-try{blockList.push(document.querySelector('.MuiGrid-item').children[0].children[2].children[0].innerText);localStorage.setItem('blockList',JSON.stringify(blockList))}catch(er){console.log(er)}`
+`javascript:var blockList=JSON.parse(localStorage.blockList||'[]');try{blockList.push(document.querySelector('.MuiGrid-item').children[0].children[2].children[0].innerText);localStorage.setItem('blockList',JSON.stringify(blockList))}catch(er){console.log(er)}`
