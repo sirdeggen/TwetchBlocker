@@ -1,5 +1,5 @@
 // Twetch blocker
-var blockList = ['Philonous', 'The Inescapable']
+var blockList = ['Someone', 'Someone Else']
 setInterval(() => {
   var allTwetches = document.querySelectorAll('.MuiGrid-item')
   allTwetches.forEach((twetch) => {
